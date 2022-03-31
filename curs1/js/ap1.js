@@ -6,7 +6,7 @@
 // primaVariabila = 60; // reasignarea erte ok , schimba valoarea variabilei
 // console.log(primaVariabila);
 // let primulNumar = 10;
-// //let primulNumar = 17;// redeclararea cu let genereaza eroare: SyntaxError
+// let primulNumar = 17;// redeclararea cu let genereaza eroare: SyntaxError
 // primulNumar = 27;// reasignarea erte ok , schimba valoarea variabilei
 // console.log(primulNumar);
 
@@ -17,15 +17,16 @@
 //     masina1 = 'Ferrari';
 //     console.log('Masina mea noua este: ' + masina1);
 // }
-// myTest();
-// console.log('Masina ta este: ' + masina1);//ReferenceError
+//myTest();
+//console.log('Masina ta este: ' + masina1);//ReferenceError
 // function myTest() {
 //     //declar local o variabila
 //     let masina11;
-//     masina11 = 'Ferrari';
+//     masina11 = 'Ferrari2';
 //     console.log('Masina mea noua este: ' + masina11);
 // }
-// console.log('Masina ta este: ' + masina1);// ReferenceError
+// myTest();
+// console.log('Masina ta este: ' + masina11);// ReferenceError
 // //2.1
 // {
 //     //declar global o variabila chiar daca se afla intre { }
@@ -33,14 +34,14 @@
 //     console.log('Masina mea noua este: ' + culoare);
 
 // }
-// console.log('Masina ta este: ' + culoare);
+//  console.log('Masina ta este: ' + culoare);
 // {
 //     //declar local o variabila  intre { }
 //     let model = '125 s';
 //     console.log('Modelul masinei mele este: ' + model);
 
 // }
-// //console.log('Modelul masinei tale este: ' + model);
+// console.log('Modelul masinei tale este: ' + model);
 
 // //2.2 declarata global
 // var masina = 'Dacia';
@@ -49,7 +50,6 @@
 //     console.log('Masina mea din garaj este: '+ masina);
 // }
 // myCar();
-
 // console.log('Masina mea este: '+ masina);
 
 // let masina2 = 'Opel';
@@ -57,15 +57,15 @@
 // function myCar1(){
 //     console.log('Masina mea din garaj este: '+ masina2);
 // }
-
+// myCar1()
 // console.log('Masina mea este: '+ masina2);
-// myCar1();
 // // //3.
 // function salutvar() {
 //     console.log(foo); // undefined
 //     var foo = "Salut Var";
 //     console.log(foo); 
 //   }
+  
 //   salutvar();
 //   function salutlet() {
 //     console.log(foo); // ReferenceError
@@ -76,7 +76,14 @@
 //   salutlet();
 
 //   //4
-  let nume = 'Popescu';
-  const prenume='Dan';
-  nume ='Ionescu';
-  prenume = 'Ion';
+//   let nume = 'Popescu';
+//   const prenume='Dan';
+//   nume ='Ionescu';
+//   prenume = 'Ion';
+
+
+  var foo = "Foo";  
+  let bar = "Bar"; 
+  
+  console.log(window.foo);
+  console.log(window.bar); 
