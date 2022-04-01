@@ -21,7 +21,7 @@ document.querySelector("ol .third");
 // 5 - In sectiunea cu id= "container" afisati  "Salut!".
 
 var foundDiv = document.getElementById("container");
-//foundDiv.innerText = 'Salut!';
+// foundDiv.innerText = 'Salut!';
 
 // 6 - Pentru elementul HTML cu class="footer" mai adaugati clasa "main".
 
