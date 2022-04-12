@@ -41,15 +41,19 @@
 
         // // Ex4 
         function info() {
-            console.log("Am terminat treaba!");
+            console.log("Am terinat treaba!");
         }
-        function task(callback) {
+        function somn() {
+            console.log("Merg la culcare!");
+        }
+        function task(aa) {
             for (let i = 0; i < 15; i++) {
                 console.log("Am facut task-ul: ", i);
             }
-            callback();// se executa functia care reprezinta obiectul
+            aa();// se executa functia care reprezinta obiectul
         }
         task(info); 
+        task(somn);
         // info - este obiectul care reprezinta functia
         //  nu se foloseste asa task(info()); //ERROR
     </script>

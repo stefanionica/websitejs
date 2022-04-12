@@ -12,8 +12,8 @@
     <h1> POMISES vs Async/Await</h1>
 <p> Metoda cu PROMISE  si cu Async/Await</p>
     <script>
-        // // 1. Metoda cu PROMISE
-        // // Definim o promisiune
+        // 1. Metoda cu PROMISE
+        // Definim o promisiune
         // function getNameP(nume) {
         //     let promisiune = new Promise(function (resolve, reject) {
         //         if (nume.length > 2) {
@@ -31,7 +31,7 @@
         //     console.log('Hai sa ne cunoastem!');
         //     getNameP('Ion').then(function (res) {
         //         console.log(res);
-        //         return getNameP('Dan').then(function (res) {
+        //         return getNameP('Da').then(function (res) {
         //             console.log(res);
         //             return getNameP('Adi').then(function (res){
         //                 console.log(res);
@@ -44,7 +44,7 @@
         // }
         // getAllNamesP();
         // 2. Metoda cu Async/Await
-        // 
+        // // 
         // function getSalut(nume) {
         //     return `Salut ${nume}`;
         // }
@@ -61,7 +61,7 @@
 
         // })
 
-        // //Pas 2
+        //Pas 2
         // async function getAllNames() {
         //     console.log('Hai sa ne cunoastem!');
         //     let myName = await getName('Mihai');
@@ -86,7 +86,7 @@
             let myName = getName('Mihai');
             let myName2 =  getName('Ionut');
             let myName3 =  getName('Razvan');
-            let arr = await Promise.all([myName, myName2,myName3]);
+            let arr = await Promise.all([myName2, myName, ,myName3]);
             console.log(arr);
             
         }
