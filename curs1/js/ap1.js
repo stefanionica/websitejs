@@ -87,3 +87,11 @@ function salutvar() {
   
   console.log(window.foo);
   console.log(window.bar); 
+
+//   const primul = document.querySelector('li');
+
+//   const parinte = primul.parentElement;
+// //   console.log(parinte);
+
+//   const bunic = parinte.parentElement;
+// console.log(bunic);
